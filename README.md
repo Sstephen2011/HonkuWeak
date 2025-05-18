@@ -1,7 +1,7 @@
 # HonkuWeak
 A homemade chess engine written in python
 The engine is called Honku. The code is for Honku v1.0
-Basic implementation, with advanced sygzy and opening book.
+Basic implementation, with titans.bin opening book.
 
 @HonkuWeak on Lichess to play with the bot. [https://lichess.org/@/HonkuWeak]
 
