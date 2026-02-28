@@ -1,5 +1,5 @@
 """
-BlastFish Chess Engine - UCI Compatible
+HonkuWeak Chess Engine - UCI Compatible
 ========================================
 Strong single-file Python chess engine targeting 2400+ Lichess blitz.
 
