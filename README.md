@@ -8,4 +8,3 @@ Contact @StephenPS, if you have any queries.
 
 ## Update: 
 Honku v2 is out. The code is rewritten into a single file. The bot now plays according to the time control, and fast, even in bullet.
-
