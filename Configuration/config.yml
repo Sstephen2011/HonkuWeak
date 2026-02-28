@@ -1,0 +1,83 @@
+url: "https://lichess.org/"
+token: "XXXXXXXXXXX" #Insert Token Here
+engine:
+  dir: "./engines/"
+  name: "honku.exe"
+  protocol: "uci"
+  ponder: true
+  polyglot:
+    enabled: false
+  draw_or_resign:
+    resign_enabled: true
+    resign_score: -700
+    resign_moves: 5
+    offer_draw_enabled: true
+    offer_draw_score: 15
+    offer_draw_moves: 8
+    offer_draw_pieces: 12
+  online_moves:
+    max_out_of_book_moves: 10
+    max_retries: 2
+    lichess_opening_explorer:
+      enabled: true
+      min_time: 30
+      max_time: 300
+      source: "masters"
+      sort: "winrate"
+      min_games: 100
+    online_egtb:
+      enabled: true
+      min_time: 20
+      max_time: 300
+      max_pieces: 7
+      source: "lichess"
+      move_quality: "best"
+  uci_options:
+    Move Overhead: 100
+    Hash: 256
+    Threads: 1
+  silence_stderr: true
+abort_time: 20
+fake_think_time: false
+rate_limiting_delay: 200
+move_overhead: 1000
+max_takebacks_accepted: 0
+quit_after_all_games_finish: false
+challenge:
+  concurrency: 1
+  sort_by: "best"
+  preference: "human"
+  accept_bot: true
+  only_bot: false
+  max_increment: 5
+  min_increment: 0
+  max_base: 1000
+  min_base: 60
+  variants:
+    - standard
+  time_controls:
+    - bullet
+    - blitz
+  modes:
+    - casual
+    - rated
+greeting:
+  hello: "Hi! I am {me}, a Python chess engine. Good luck!"
+  goodbye: "Good game! Thanks for playing!"
+  hello_spectators: "Hi! Watching {me} play. Enjoy!"
+  goodbye_spectators: "Thanks for watching!"
+matchmaking:
+  allow_matchmaking: false
+  allow_during_games: false
+  challenge_variant: "standard"
+  challenge_timeout: 5
+  challenge_initial_time:
+    - 60
+    - 180
+  challenge_increment:
+    - 1
+    - 2
+  opponent_rating_difference: 200
+  rating_preference: "high"
+  challenge_mode: "rated"
+  challenge_filter: "coarse"
